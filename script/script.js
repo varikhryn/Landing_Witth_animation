@@ -8,6 +8,7 @@ if (document.querySelectorAll('._anim-items-translate') != null && document.quer
     animItemsTranslate = document.querySelectorAll('._anim-items-translate');
 }
 
+console.log("work");
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    setTimeout(() => {
+    setTimeout(function () {
         animOnScroll();
 
         animOnScrollTranslate();
@@ -97,8 +98,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let btnsMainServices;
     if (document.querySelectorAll(".m_about-item_this-btn") != null && document.querySelectorAll(".m_about-item_this-btn") != undefined) {
         btnsMainServices = document.querySelectorAll(".m_about-item_this-btn");
-        for (let item of btnsMainServices) {
-            item.onclick = function () {
+        // for (let item of btnsMainServices) {
+        //     item.onclick = function () {
+        //         this.parentElement.parentElement.parentElement.classList.toggle('active-tab-service');
+        //         animOnScroll()
+        //     }
+        // }
+        for (let item = 0; item < btnsMainServices.length - 1; item++) {
+            btnsMainServices[item].onclick = function () {
                 this.parentElement.parentElement.parentElement.classList.toggle('active-tab-service');
                 animOnScroll()
             }

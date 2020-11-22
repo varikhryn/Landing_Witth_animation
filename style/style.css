@@ -863,6 +863,11 @@ main{
     -webkit-animation: rotate_inf 20s linear infinite;
     animation: rotate_inf 20s linear infinite;
     transform-origin: center;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: auto;
 }
 .s-100vh_play{
     margin-left: 3px;
