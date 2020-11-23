@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //         animOnScroll()
         //     }
         // }
-        for (let item = 0; item < btnsMainServices.length - 1; item++) {
+        for (let item = 0; item < btnsMainServices.length; item++) {
             btnsMainServices[item].onclick = function () {
                 this.parentElement.parentElement.parentElement.classList.toggle('active-tab-service');
                 animOnScroll()
@@ -129,14 +129,14 @@ function animOnScroll() {
 
         if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
             animItem.classList.add('_active-scrll-anim');
-        } else {
-            animItem.classList.remove('_active-scrll-anim');
         }
+        // else {
+        //     animItem.classList.remove('_active-scrll-anim');
+        // }
     }
 }
 
 function animOnScrollTranslate() {
-
     for (let index = 0; index < animItemsTranslate.length; index++) {
         const animItem = animItemsTranslate[index];
         const animItemHeight = animItem.offsetHeight;
@@ -162,7 +162,7 @@ function offsetTranslate(el) {
     console.log("****")
     console.log(rect.y)
 
-    let k = el.clientLeft + (el.offsetHeight - rect.y) * 2;
+    let k = el.clientLeft - (el.offsetHeight - rect.y) * 2;
     let z = { transform: "translateX(" + k + "px)", };
     if (k <= el.clientLeft) {
         z = { transform: "translateX(" + el.clientLeft + "px)", };

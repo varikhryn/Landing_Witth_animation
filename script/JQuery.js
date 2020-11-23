@@ -1,15 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
     // slider slick
     $('#slider-m-partners').slick({
-        autoSlidesToShow: true,
-        speed: 300,
+        // autoSlidesToShow: true,
+        // speed: 300,
         variableWidth: true,
         slidesToScroll: 1,
-        infinite: true,
-        slidesToShow: 4,
+        infinite: false,
+        slidesToShow: 3.5,
         prevArrow: $('#btn_partners_prev'),
         nextArrow: $('#btn_partners_next'),
-        // rows: 0,
+        rows: 0,
+        responsive: [
+            {
+                breakpoint: 1800,
+                settings: {
+                    slidesToShow: 3.5,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });// ./ slider slick
 
     // slider slick proud
