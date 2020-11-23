@@ -8,6 +8,11 @@ if (document.querySelectorAll('._anim-items-translate') != null && document.quer
     animItemsTranslate = document.querySelectorAll('._anim-items-translate');
 }
 
+let animItemsTranslateLeft;
+if (document.querySelectorAll('._anim-items-translate_left') != null && document.querySelectorAll('._anim-items-translate_left') != undefined) {
+    animItemsTranslateLeft = document.querySelectorAll('._anim-items-translate_left');
+}
+
 console.log("work");
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -16,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         animOnScroll();
         animOnScrollTranslate();
+        animOnScrollTranslateLeft();
 
         let hedaerFix;
         if (document.getElementById('header-fix') != null && document.getElementById('header-fix') != undefined) {
@@ -40,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(function () {
         animOnScroll();
-
         animOnScrollTranslate();
+        animOnScrollTranslateLeft();
     }, 300);
     // ***********  add animation on full site ... END ... ***********
 
@@ -155,12 +161,44 @@ function animOnScrollTranslate() {
         }
     }
 }
+function animOnScrollTranslateLeft() {
+    for (let index = 0; index < animItemsTranslateLeft.length; index++) {
+        const animItem = animItemsTranslateLeft[index];
+        const animItemHeight = animItem.offsetHeight;
+        const animItemOffset = offset(animItem).top;
+        const animStart = 8;
+
+        let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+        if (animItemHeight > window.innerHeight) {
+            animItemPoint = window.innerHeight - window.innerHeight / animStart;
+        }
+
+        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+            console.log("work")
+            animItem.style.transform = offsetTranslateLeft(animItem).transform;
+        }
+    }
+}
+function offsetTranslateLeft(el) {
+
+    const rect = el.getBoundingClientRect();
+
+    let k = el.clientLeft - (el.offsetHeight * 1.8 - rect.y);
+    let z = { transform: "translateX(" + k + "px)", };
+
+    if (k >= el.clientLeft) {
+        z = { transform: "translateX(" + el.clientLeft + "px)", };
+    } else {
+        z = { transform: "translateX(" + k + "px)", }
+    }
+    console.log(z);
+    return z;
+}
 
 function offsetTranslate(el) {
 
     const rect = el.getBoundingClientRect();
-    console.log("****")
-    console.log(rect.y)
 
     let k = el.clientLeft - (el.offsetHeight - rect.y) * 2;
     let z = { transform: "translateX(" + k + "px)", };
@@ -169,7 +207,7 @@ function offsetTranslate(el) {
     } else {
         z = { transform: "translateX(" + k + "px)", }
     }
-    // console.log(z);
+
     return z;
 }
 

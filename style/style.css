@@ -267,7 +267,7 @@ h5{
     -o-animation: border__width 2s ease;
     -webkit-animation: border__width 2s ease;
     animation: border__width 2s ease;
-    z-index: 999;
+    /* z-index: 999; */
     background-color: #011D45;
 }
 .anim-border-r-t._active-scrll-anim::after{
@@ -482,11 +482,11 @@ h5{
 }
 .eff-opacity_no-tr{
     opacity: 0;
-    transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out 0s;
 }
 .eff-opacity_no-tr._active-scrll-anim{
     opacity: 1;
-    transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out 0.5s;
 }
 /* effect for h1 in 100vh */
 .effect_big-h1_r{
@@ -900,6 +900,7 @@ main{
 .blc-w-l_100vh-menu > ul > li > a.active-menu{
     padding-left: 24px;
 }
+
 .header-fxd_menu > ul > li > a.active-menu::after{
     content: "";
     position: absolute;
@@ -1213,17 +1214,15 @@ main{
 .btn-arrow .btn-slider-no_anim{
     stroke: rgb(255, 255, 255);
     stroke-width: 1px;
-    stroke-dasharray: 250;
-    transition: all .5s ease-in-out;
-    animation: offsetBtn 3s forwards;
+    stroke-dashoffset: 250;
+    transition: stroke-dashoffset .5s ease-in-out;
     fill: transparent;
 }
-.btn-arrow .btn-slider-no_anim_w{
+.btn-arrow .btn-slider-no_anim_w svg circle{
     stroke: #011D45;
     stroke-width: 1px;
-    stroke-dasharray: 250;
-    transition: all .5s ease-in-out;
-    animation: offsetBtn 3s forwards;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset .5s ease-in-out;
     fill: transparent;
 }
 .btn-arrow:hover .btn-slider-no_anim_w svg circle{
@@ -1257,11 +1256,11 @@ main{
 }
 @keyframes offsetBtnHover {
     from {
-       stroke-dashoffset: 0;
+       stroke-dashoffset: 250;
     }
 
     to {
-       stroke-dashoffset: 250;
+       stroke-dashoffset: 0;
     }
 }
 .btn-arrow.btn-next > svg{
@@ -1340,6 +1339,7 @@ main{
 #slider-m-partners .slick-track .m-partners_sld-item{
     margin-right: 30px;
     width: 21vw!important;
+    height: auto!important;
 }
 .btn-arrow.slick-disabled{
     opacity: 0.5;
@@ -1493,6 +1493,7 @@ main{
     width: max-content;
     position: relative;
     margin-right: 13px;
+    margin-top: 4px;
 }
 .m-proud-sl_itm_r_btm > ul li figure::after {
     content: '';
