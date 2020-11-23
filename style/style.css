@@ -710,7 +710,7 @@ main{
     padding: 60px 0 0 0;
 }
 .s-100vh_t{
-    margin-bottom: calc(70px + 80 * (100vw / 1920));
+    margin-bottom: 20px;
     position: relative;
     z-index: 99;
 }
@@ -1181,13 +1181,6 @@ main{
 .m-partners_bottom_btn{
     padding-top: 150px;
 }
-/* .btn-arrow{
-    width: 71px;
-    height: 71px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    position: relative;
-} */
 .btn-arrow{
     width: max-content;
     position: relative;
@@ -1198,7 +1191,6 @@ main{
 .btn-arrow figure{
     width: max-content;
 }
-
 /* style for svg circle */
 .btn-arrow .anim-circle._active-scrll-anim svg circle {
     stroke: rgb(255, 255, 255);
@@ -1244,24 +1236,6 @@ main{
     animation: offsetBtnHover 1s forwards;
     transition: all .5s ease-in-out;
     fill: transparent;
-}
-@keyframes offsetBtn {
-    from {
-       stroke-dashoffset: 250;
-    }
-
-    to {
-       stroke-dashoffset: 0;
-    }
-}
-@keyframes offsetBtnHover {
-    from {
-       stroke-dashoffset: 250;
-    }
-
-    to {
-       stroke-dashoffset: 0;
-    }
 }
 .btn-arrow.btn-next > svg{
     position: absolute;
@@ -1526,7 +1500,6 @@ footer{
 .footer_l{
     width: calc(20% + 245px);
     padding: 65px 0 25px 0;
-    /* padding-right: 10px; */
 }
 .footer_n-menu{
     width: 120px;
@@ -1635,6 +1608,97 @@ footer{
     }
 }
 /***************************************************
+                    Media Screen MAX-Width: 1900px
+***************************************************/
+@media screen and (max-width: 1900px){
+    h1{
+        font-size: 78px;
+    }
+    .ttl_abs_b p{
+        font-size: 290px;
+    }
+    .ttl_abs_w p{
+        font-size: 257px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1850px
+***************************************************/
+@media screen and (max-width: 1850px){
+    h1{
+        font-size: 76px;
+    }
+    .ttl_abs_b p{
+        font-size: 280px;
+    }
+    .ttl_abs_w p{
+        font-size: 247px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1800px
+***************************************************/
+@media screen and (max-width: 1800px){
+    h1{
+        font-size: 74px;
+    }
+    .ttl_abs_b p{
+        font-size: 270px;
+    }
+    .ttl_abs_w p{
+        font-size: 237px;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 158px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1750px
+***************************************************/
+@media screen and (max-width: 1750px){
+    h1{
+        font-size: 72px;
+    }
+    .ttl_abs_b p{
+        font-size: 260px;
+    }
+    .ttl_abs_w p{
+        font-size: 227px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1700px
+***************************************************/
+@media screen and (max-width: 1700px){
+    h1{
+        font-size: 70px;
+    }
+    .ttl_abs_b p{
+        font-size: 250px;
+    }
+    .ttl_abs_w p{
+        font-size: 217px;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 148px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1650px
+***************************************************/
+@media screen and (max-width: 1650px){
+    h1{
+        font-size: 68px;
+        line-height: 170%;
+    }
+    .ttl_abs_b p{
+        font-size: 240px;
+    }
+    .ttl_abs_w p{
+        font-size: 207px;
+    }
+}
+/***************************************************
                     Media Screen MAX-Width: 1600px
 ***************************************************/
 @media screen and (max-width: 1600px){
@@ -1647,13 +1711,19 @@ footer{
         font-size: 14px;
     }
     h1{
-        font-size: 40px;
+        font-size: 66px;
     }
     h2{
         font-size: 24px;
     }
     h5{
         font-size: 14px;
+    }
+    .ttl_abs_b p{
+        font-size: 230px;
+    }
+    .ttl_abs_w p{
+        font-size: 197px;
     }
     .m-partners_sld-item_btm.simple-link-ef a{
         font-size: 12px;
@@ -1668,7 +1738,7 @@ footer{
         font-size: 14px;
     }
     .all_blk-stl{
-        padding: 70px 0 80px 0;
+        padding: 100px 0 110px 0;
     }
     .m-partners-big-ttl{
         margin-bottom: 120px;
@@ -1679,13 +1749,187 @@ footer{
     .header-fxd_menu ul li a{
         font-size: 12px;
     }
+    .s-100vh_cntr{
+        padding: 40px 0;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 138px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1550px
+***************************************************/
+@media screen and (max-width: 1550px){
+    h1{
+        font-size: 64px;
+    }
+    .ttl_abs_b p{
+        font-size: 220px;
+    }
+    .ttl_abs_w p{
+        font-size: 187px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1500px
+***************************************************/
+@media screen and (max-width: 1500px){
+    h1{
+        font-size: 62px;
+    }
+    .ttl_abs_b p{
+        font-size: 210px;
+    }
+    .ttl_abs_w p{
+        font-size: 177px;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 118px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1450px
+***************************************************/
+@media screen and (max-width: 1450px){
+    h1{
+        font-size: 60px;
+    }
+    .ttl_abs_b p{
+        font-size: 200px;
+    }
+    .ttl_abs_w p{
+        font-size: 167px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1400px
+***************************************************/
+@media screen and (max-width: 1400px){
+    h1{
+        font-size: 56px;
+        line-height: 190%;
+    }
+    .ttl_abs_b p{
+        font-size: 190px;
+    }
+    .ttl_abs_w p{
+        font-size: 157px;
+    }
+    .all_blk-stl{
+        padding: 90px 0 100px 0;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 108px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1350px
+***************************************************/
+@media screen and (max-width: 1350px){
+    h1{
+        font-size: 54px;
+    }
+    .ttl_abs_b p{
+        font-size: 180px;
+    }
+    .ttl_abs_w p{
+        font-size: 147px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1300px
+***************************************************/
+@media screen and (max-width: 1300px){
+    h1{
+        font-size: 52px;
+    }
+    .ttl_abs_b p{
+        font-size: 170px;
+    }
+    .ttl_abs_w p{
+        font-size: 137px;
+    }
+    .all_blk-stl{
+        padding: 80px 0 90px 0;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 98px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1250px
+***************************************************/
+@media screen and (max-width: 1250px){
+    h1{
+        font-size: 49px;
+    }
+    .ttl_abs_b p{
+        font-size: 160px;
+    }
+    .ttl_abs_w p{
+        font-size: 127px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1200px
+***************************************************/
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: 47px;
+    }
+    .ttl_abs_b p{
+        font-size: 150px;
+    }
+    .ttl_abs_w p{
+        font-size: 117px;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 88px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1150px
 ***************************************************/
 @media screen and (max-width: 1150px){
+    h1{
+        font-size: 45px;
+    }
     .ttl_abs_b p{
-        font-size: 160px;
+        font-size: 140px;
+    }
+    .ttl_abs_w p{
+        font-size: 107px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1100px
+***************************************************/
+@media screen and (max-width: 1100px){
+    h1{
+        font-size: 43px;
+    }
+    .ttl_abs_b p{
+        font-size: 130px;
+    }
+    .ttl_abs_w p{
+        font-size: 97px;
+    }
+    .s-big-title_m-about{
+        margin-bottom: 78px;
+    }
+}
+/***************************************************
+                    Media Screen MAX-Width: 1050px
+***************************************************/
+@media screen and (max-width: 1050px){
+    h1{
+        font-size: 40px;
+    }
+    .ttl_abs_b p{
+        font-size: 120px;
+    }
+    .ttl_abs_w p{
+        font-size: 87px;
     }
 }
 /***************************************************
@@ -1727,3 +1971,15 @@ footer{
 @-o-keyframes desplode {0% {width: 800px;height: 800px;margin-left: -400px;margin-top: -400px;background-color: rgba(1, 29, 69, 0.1);}100% {width: 0px;height: 0px;margin-left: 0px;margin-top: 0px;background-color: rgba(1, 29, 69, 0.1);}}
 @-webkit-keyframes desplode {0% {width: 800px;height: 800px;margin-left: -400px;margin-top: -400px;background-color: rgba(1, 29, 69, 0.1);}100% {width: 0px;height: 0px;margin-left: 0px;margin-top: 0px;background-color: rgba(1, 29, 69, 0.1);}}
 @keyframes desplode {0% {width: 800px;height: 800px;margin-left: -400px;margin-top: -400px;background-color: rgba(1, 29, 69, 0.1);}100% {width: 0px;height: 0px;margin-left: 0px;margin-top: 0px;background-color: rgba(1, 29, 69, 0.1);}}
+/* offsetBtn */
+@-moz-keyframes offsetBtn {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@-ms-keyframes offsetBtn {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@-o-keyframes offsetBtn {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@-webkit-keyframes offsetBtn {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@keyframes offsetBtn {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+/* offsetBtn */
+@-moz-keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@-ms-keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@-o-keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@-webkit-keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+@keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
