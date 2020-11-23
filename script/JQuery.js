@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // slider slick proud
     $('#m-proud_slider').slick({
         dots: false,
-        infinite: true,
+        infinite: false,
         lazyLoad: 'ondemand',
         speed: 500,
         fade: true,

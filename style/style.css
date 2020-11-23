@@ -774,9 +774,13 @@ main{
     margin-right: 0;
     min-width: 60px;
     background-color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 1px solid #011D45;
     display: none;
     z-index: 9999;
+}
+.lang_100vh.s-100vh_show-lang{
+    background-color: #011D45;
+    border: 1px solid #ffffff;
 }
 .active_100vh_lng .s-100vh_show-lang,
 .active_h-f_lng .s-100vh_show-lang{
@@ -800,14 +804,30 @@ main{
     text-decoration: none;
     text-transform: uppercase;
     color: #011D45;
-    text-align: right;
+    text-align: center;
     padding: 5px 8px;
     transition: all .3s ease-in-out;
+}
+.lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li a{
+    color: #FFFFFF;
+    background-color: #011D45;
+    transition: all .5s ease-in-out;
+}
+.lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li{
+    border-bottom: 1px solid #FFFFFF;
+}
+.lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li:last-of-type a{
+    border-bottom: none;
 }
 .s-100vh_show-lang_wr ul li a:hover{
     background-color:  #011D45;
     color: #ffffff;
     transition: all .3s ease-in-out;
+}
+.lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li a:hover{
+    color: #011D45;
+    background-color: #FFFFFF;
+    transition: all .5s ease-in-out;
 }
 .s-100vh_rtt{
     width: 71px;
@@ -843,7 +863,7 @@ main{
     color: #FFFFFF;
 }
 .blc-w-l_100vh-menu{
-    padding-top: 19px;
+    margin-top: -15px;
 }
 .blc-w-l_100vh-menu > ul{
     width: 100%;
@@ -1089,6 +1109,11 @@ main{
     margin: 0 0 0 auto;
     padding: 32px 0;
     display: none;
+    border-bottom: 1px solid #011D45;
+}
+
+.m_about-item:last-of-type .m_about-item_show{
+    border-bottom: none;
 }
 .active-tab-service .m_about-item_show{
     display: flex;
@@ -1247,7 +1272,7 @@ main{
     transition: all .5s ease-in-out;
 }
 .btn-arrow.btn-next:hover > svg{
-    left: 0;
+    left: 3px;
     transition: all .5s ease-in-out;
 }
 .btn-arrow.btn-prev > svg{
@@ -1260,7 +1285,7 @@ main{
     transition: all .5s ease-in-out;
 }
 .btn-arrow.btn-prev:hover svg{
-    right: 0;
+    right: 3px;
     transition: all .5s ease-in-out;
 }
 .m-partners_bottom_cnt{
@@ -1620,6 +1645,9 @@ footer{
     .ttl_abs_w p{
         font-size: 257px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: -11px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1850px
@@ -1633,6 +1661,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 247px;
+    }
+    .blc-w-l_100vh-menu{
+        margin-top: -7px;
     }
 }
 /***************************************************
@@ -1651,6 +1682,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 158px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: -3px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1750px
@@ -1664,6 +1698,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 227px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 1px;
     }
 }
 /***************************************************
@@ -1682,6 +1719,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 148px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: 6px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1650px
@@ -1689,7 +1729,7 @@ footer{
 @media screen and (max-width: 1650px){
     h1{
         font-size: 68px;
-        line-height: 170%;
+        line-height: 160%;
     }
     .ttl_abs_b p{
         font-size: 240px;
@@ -1755,6 +1795,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 138px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: -8px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1550px
@@ -1768,6 +1811,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 187px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 1px;
     }
 }
 /***************************************************
@@ -1786,6 +1832,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 118px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: 5px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1450px
@@ -1800,6 +1849,9 @@ footer{
     .ttl_abs_w p{
         font-size: 167px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: 9px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1400px
@@ -1807,7 +1859,6 @@ footer{
 @media screen and (max-width: 1400px){
     h1{
         font-size: 56px;
-        line-height: 190%;
     }
     .ttl_abs_b p{
         font-size: 190px;
@@ -1820,6 +1871,9 @@ footer{
     }
     .s-big-title_m-about{
         margin-bottom: 108px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 22px;
     }
 }
 /***************************************************
@@ -1834,6 +1888,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 147px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 24px;
     }
 }
 /***************************************************
@@ -1855,6 +1912,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 98px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: 32px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1250px
@@ -1868,6 +1928,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 127px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 34px;
     }
 }
 /***************************************************
@@ -1886,6 +1949,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 88px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: 40px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1150px
@@ -1899,6 +1965,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 107px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 48px;
     }
 }
 /***************************************************
@@ -1917,6 +1986,9 @@ footer{
     .s-big-title_m-about{
         margin-bottom: 78px;
     }
+    .blc-w-l_100vh-menu {
+        margin-top: 52px;
+    }
 }
 /***************************************************
                     Media Screen MAX-Width: 1050px
@@ -1930,6 +2002,9 @@ footer{
     }
     .ttl_abs_w p{
         font-size: 87px;
+    }
+    .blc-w-l_100vh-menu {
+        margin-top: 60px;
     }
 }
 /***************************************************
