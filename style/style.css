@@ -125,7 +125,7 @@ h5{
 }
 .ttl_abs_w p{
     font-family: "TT Interfaces ExtraBold"; 
-    font-size: 267px;
+    font-size: 300px;
     line-height: 1.2;
     letter-spacing: 0.05em;
     color: white;
@@ -1643,11 +1643,9 @@ footer{
     h1{
         font-size: 78px;
     }
-    .ttl_abs_b p{
-        font-size: 290px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 257px;
+        font-size: 290px;
     }
     .blc-w-l_100vh-menu {
         margin-top: -11px;
@@ -1660,11 +1658,9 @@ footer{
     h1{
         font-size: 76px;
     }
-    .ttl_abs_b p{
-        font-size: 280px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 247px;
+        font-size: 280px;
     }
     .blc-w-l_100vh-menu{
         margin-top: -7px;
@@ -1677,11 +1673,9 @@ footer{
     h1{
         font-size: 74px;
     }
-    .ttl_abs_b p{
-        font-size: 270px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 237px;
+        font-size: 270px;
     }
     .s-big-title_m-about{
         margin-bottom: 158px;
@@ -1697,11 +1691,9 @@ footer{
     h1{
         font-size: 72px;
     }
-    .ttl_abs_b p{
-        font-size: 260px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 227px;
+        font-size: 260px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 1px;
@@ -1714,11 +1706,9 @@ footer{
     h1{
         font-size: 70px;
     }
-    .ttl_abs_b p{
-        font-size: 250px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 217px;
+        font-size: 250px;
     }
     .s-big-title_m-about{
         margin-bottom: 148px;
@@ -1735,11 +1725,9 @@ footer{
         font-size: 68px;
         line-height: 160%;
     }
-    .ttl_abs_b p{
-        font-size: 240px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 207px;
+        font-size: 240px;
     }
 }
 /***************************************************
@@ -1763,11 +1751,9 @@ footer{
     h5{
         font-size: 14px;
     }
-    .ttl_abs_b p{
-        font-size: 230px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 197px;
+        font-size: 230px;
     }
     .m-partners_sld-item_btm.simple-link-ef a{
         font-size: 12px;
@@ -1814,11 +1800,9 @@ footer{
     h1{
         font-size: 64px;
     }
-    .ttl_abs_b p{
-        font-size: 220px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 187px;
+        font-size: 220px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 1px;
@@ -1831,11 +1815,9 @@ footer{
     h1{
         font-size: 62px;
     }
-    .ttl_abs_b p{
-        font-size: 210px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 177px;
+        font-size: 210px;
     }
     .s-big-title_m-about{
         margin-bottom: 118px;
@@ -1851,11 +1833,9 @@ footer{
     h1{
         font-size: 60px;
     }
-    .ttl_abs_b p{
-        font-size: 200px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 167px;
+        font-size: 200px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 9px;
@@ -1868,11 +1848,9 @@ footer{
     h1{
         font-size: 56px;
     }
-    .ttl_abs_b p{
-        font-size: 190px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 157px;
+        font-size: 190px;
     }
     .all_blk-stl{
         padding: 90px 0 100px 0;
@@ -1891,11 +1869,9 @@ footer{
     h1{
         font-size: 54px;
     }
-    .ttl_abs_b p{
-        font-size: 180px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 147px;
+        font-size: 180px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 24px;
@@ -1908,11 +1884,9 @@ footer{
     h1{
         font-size: 52px;
     }
-    .ttl_abs_b p{
-        font-size: 170px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 137px;
+        font-size: 170px;
     }
     .all_blk-stl{
         padding: 80px 0 90px 0;
@@ -1931,11 +1905,9 @@ footer{
     h1{
         font-size: 49px;
     }
-    .ttl_abs_b p{
-        font-size: 160px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 127px;
+        font-size: 160px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 34px;
@@ -1948,11 +1920,9 @@ footer{
     h1{
         font-size: 47px;
     }
-    .ttl_abs_b p{
-        font-size: 150px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 117px;
+        font-size: 150px;
     }
     .s-big-title_m-about{
         margin-bottom: 88px;
@@ -1968,11 +1938,9 @@ footer{
     h1{
         font-size: 45px;
     }
-    .ttl_abs_b p{
-        font-size: 140px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 107px;
+        font-size: 140px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 48px;
@@ -1985,11 +1953,9 @@ footer{
     h1{
         font-size: 43px;
     }
-    .ttl_abs_b p{
-        font-size: 130px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 97px;
+        font-size: 130px;
     }
     .s-big-title_m-about{
         margin-bottom: 78px;
@@ -2005,11 +1971,9 @@ footer{
     h1{
         font-size: 40px;
     }
-    .ttl_abs_b p{
-        font-size: 120px;
-    }
+    .ttl_abs_b p,
     .ttl_abs_w p{
-        font-size: 87px;
+        font-size: 120px;
     }
     .blc-w-l_100vh-menu {
         margin-top: 60px;
