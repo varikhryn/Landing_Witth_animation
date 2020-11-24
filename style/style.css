@@ -488,6 +488,15 @@ h5{
     opacity: 1;
     transition: all .8s ease-in-out 0.5s;
 }
+/* why me */
+.eff-opacity_no-tr-why{
+    opacity: 0;
+    transition: all .8s ease-in-out 0s;
+}
+.eff-opacity_no-tr-why._active-scrll-anim{
+    opacity: 1;
+    transition: all .8s ease-in-out 0.8s;
+}
 /* effect for h1 in 100vh */
 .effect_big-h1_r{
     position: relative;
@@ -680,6 +689,9 @@ header{
     list-style: none;
     position: relative;
 }
+#header-fix .header-fxd_menu > ul > li a{
+    margin-left: -24px;
+}
 /***************************************************
                                     Section Main 
 ***************************************************/
@@ -767,12 +779,12 @@ main{
 }
 .s-100vh_show-lang{
     position: absolute;
-    top: 110%;
+    top: 130%;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: 0;
-    min-width: 60px;
+    /* min-width: 60px; */
     background-color: #ffffff;
     border: 1px solid #011D45;
     display: none;
@@ -805,8 +817,9 @@ main{
     text-transform: uppercase;
     color: #011D45;
     text-align: center;
-    padding: 5px 8px;
+    padding: 5px 5px;
     transition: all .3s ease-in-out;
+    vertical-align: text-top;
 }
 .lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li a{
     color: #FFFFFF;
@@ -1791,6 +1804,9 @@ footer{
     .footer_r_t_soc > a > svg{
         width: auto;
         height: auto;
+    }
+    .m-why-we_itm_l{
+        padding-top: 0;
     }
 }
 /***************************************************
