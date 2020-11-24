@@ -828,6 +828,7 @@ main{
 }
 .lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li{
     border-bottom: 1px solid #FFFFFF;
+    transition: all .5s ease-in-out;
 }
 .lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li:last-of-type a{
     border-bottom: none;
@@ -839,6 +840,10 @@ main{
 }
 .lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li a:hover{
     color: #011D45;
+    background-color: #FFFFFF;
+    transition: all .5s ease-in-out;
+}
+.lang_100vh.s-100vh_show-lang .s-100vh_show-lang_wr ul li:hover{
     background-color: #FFFFFF;
     transition: all .5s ease-in-out;
 }
