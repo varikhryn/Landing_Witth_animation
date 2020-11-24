@@ -1272,7 +1272,7 @@ main{
     transition: all .5s ease-in-out;
 }
 .btn-arrow.btn-next:hover > svg{
-    left: 3px;
+    left: 25px;
     transition: all .5s ease-in-out;
 }
 .btn-arrow.btn-prev > svg{
@@ -1285,7 +1285,7 @@ main{
     transition: all .5s ease-in-out;
 }
 .btn-arrow.btn-prev:hover svg{
-    right: 3px;
+    right: 25px;
     transition: all .5s ease-in-out;
 }
 .m-partners_bottom_cnt{
