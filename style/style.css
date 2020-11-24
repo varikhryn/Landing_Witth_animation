@@ -1620,6 +1620,10 @@ footer{
 .footer_r_t_soc > a:nth-of-type(1){
     margin-bottom: 15px;
 }
+.footer_r_t_soc > a > svg{
+    width: 25px;
+    height: auto;
+}
 /***************************************************
                     Media Screen MAX-Width: 1920px
 ***************************************************/
@@ -1797,6 +1801,10 @@ footer{
     }
     .blc-w-l_100vh-menu {
         margin-top: -8px;
+    }
+    .footer_r_t_soc > a > svg{
+        width: auto;
+        height: auto;
     }
 }
 /***************************************************
