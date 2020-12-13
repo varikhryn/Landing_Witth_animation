@@ -8,12 +8,10 @@ if (document.querySelectorAll('._anim-items-translate') != null && document.quer
     animItemsTranslate = document.querySelectorAll('._anim-items-translate');
 }
 
-let animItemsTranslateLeft;
-if (document.querySelectorAll('._anim-items-translate_left') != null && document.querySelectorAll('._anim-items-translate_left') != undefined) {
-    animItemsTranslateLeft = document.querySelectorAll('._anim-items-translate_left');
-}
-
-console.log("work");
+// let animItemsTranslateLeft;
+// if (document.querySelectorAll('._anim-items-translate_left') != null && document.querySelectorAll('._anim-items-translate_left') != undefined) {
+//     animItemsTranslateLeft = document.querySelectorAll('._anim-items-translate_left');
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -23,25 +21,25 @@ document.addEventListener('DOMContentLoaded', function () {
         animOnScrollTranslate();
         animOnScrollTranslateLeft();
 
-        let hedaerFix;
-        if (document.getElementById('header-fix') != null && document.getElementById('header-fix') != undefined) {
-            hedaerFix = document.getElementById('header-fix');
-            hedaerFix.hidden = (pageYOffset < (document.documentElement.clientHeight + 74));
-            hedaerFix.style.opacity = 1;
-            hedaerFix.style.zIndex = 99999999;
-            hedaerFix.style.transition = "all .5s ease-in";
-        }
+        // let hedaerFix;
+        // if (document.getElementById('header-fix') != null && document.getElementById('header-fix') != undefined) {
+        //     hedaerFix = document.getElementById('header-fix');
+        //     hedaerFix.hidden = (pageYOffset < (document.documentElement.clientHeight + 74));
+        //     hedaerFix.style.opacity = 1;
+        //     hedaerFix.style.zIndex = 99999999;
+        //     hedaerFix.style.transition = "all .5s ease-in";
+        // }
     });
-    if (pageYOffset > (document.documentElement.clientHeight + 74)) {
-        let hedaerFix;
-        if (document.getElementById('header-fix') != null && document.getElementById('header-fix') != undefined) {
-            hedaerFix = document.getElementById('header-fix');
-            hedaerFix.hidden = (pageYOffset < (document.documentElement.clientHeight + 74));
-            hedaerFix.style.opacity = 1;
-            hedaerFix.style.zIndex = 99999999;
-            hedaerFix.style.transition = "all .5s ease-in";
-        }
-    }
+    // if (pageYOffset > (document.documentElement.clientHeight + 74)) {
+    //     let hedaerFix;
+    //     if (document.getElementById('header-fix') != null && document.getElementById('header-fix') != undefined) {
+    //         hedaerFix = document.getElementById('header-fix');
+    //         hedaerFix.hidden = (pageYOffset < (document.documentElement.clientHeight + 74));
+    //         hedaerFix.style.opacity = 1;
+    //         hedaerFix.style.zIndex = 99999999;
+    //         hedaerFix.style.transition = "all .5s ease-in";
+    //     }
+    // }
 
 
     setTimeout(function () {
@@ -156,45 +154,42 @@ function animOnScrollTranslate() {
         }
 
         if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-            console.log("work")
             animItem.style.transform = offsetTranslate(animItem).transform;
         }
     }
 }
-function animOnScrollTranslateLeft() {
-    for (let index = 0; index < animItemsTranslateLeft.length; index++) {
-        const animItem = animItemsTranslateLeft[index];
-        const animItemHeight = animItem.offsetHeight;
-        const animItemOffset = offset(animItem).top;
-        const animStart = 8;
+// function animOnScrollTranslateLeft() {
+//     for (let index = 0; index < animItemsTranslateLeft.length; index++) {
+//         const animItem = animItemsTranslateLeft[index];
+//         const animItemHeight = animItem.offsetHeight;
+//         const animItemOffset = offset(animItem).top;
+//         const animStart = 8;
 
-        let animItemPoint = window.innerHeight - animItemHeight / animStart;
+//         let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
-        if (animItemHeight > window.innerHeight) {
-            animItemPoint = window.innerHeight - window.innerHeight / animStart;
-        }
+//         if (animItemHeight > window.innerHeight) {
+//             animItemPoint = window.innerHeight - window.innerHeight / animStart;
+//         }
 
-        if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-            console.log("work")
-            animItem.style.transform = offsetTranslateLeft(animItem).transform;
-        }
-    }
-}
-function offsetTranslateLeft(el) {
+//         if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+//             animItem.style.transform = offsetTranslateLeft(animItem).transform;
+//         }
+//     }
+// }
+// function offsetTranslateLeft(el) {
 
-    const rect = el.getBoundingClientRect();
+//     const rect = el.getBoundingClientRect();
 
-    let k = el.clientLeft - (el.offsetHeight * 1.8 - rect.y);
-    let z = { transform: "translateX(" + k + "px)", };
+//     let k = el.clientLeft - (el.offsetHeight * 1.8 - rect.y);
+//     let z = { transform: "translateX(" + k + "px)", };
 
-    if (k >= el.clientLeft) {
-        z = { transform: "translateX(" + el.clientLeft + "px)", };
-    } else {
-        z = { transform: "translateX(" + k + "px)", }
-    }
-    console.log(z);
-    return z;
-}
+//     if (k >= el.clientLeft) {
+//         z = { transform: "translateX(" + el.clientLeft + "px)", };
+//     } else {
+//         z = { transform: "translateX(" + k + "px)", }
+//     }
+//     return z;
+// }
 
 function offsetTranslate(el) {
 
