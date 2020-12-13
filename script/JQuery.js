@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {
     // slider slick
     $('#slider-m-partners').slick({
         variableWidth: true,
@@ -21,12 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // slider slick proud
     $('#m-proud_slider').slick({
-        variableWidth: true,
+        // variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
         infinite: false,
-        // lazyLoad: 'ondemand',
         speed: 500,
         fade: true,
         cssEase: 'linear',

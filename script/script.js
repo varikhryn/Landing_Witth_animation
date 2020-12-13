@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         animOnScroll();
         animOnScrollTranslate();
-        animOnScrollTranslateLeft();
+        // animOnScrollTranslateLeft();
 
         // let hedaerFix;
         // if (document.getElementById('header-fix') != null && document.getElementById('header-fix') != undefined) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         animOnScroll();
         animOnScrollTranslate();
-        animOnScrollTranslateLeft();
+        // animOnScrollTranslateLeft();
     }, 300);
     // ***********  add animation on full site ... END ... ***********
 

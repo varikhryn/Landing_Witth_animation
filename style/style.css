@@ -1674,12 +1674,24 @@ body.main-no-scroll{
 .m-proud-sl_itm_wr{
     margin-right: 1px;
 }
-#m-proud_slider .slick-track{
+/* #m-proud_slider .slick-track{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-start; 
+     width: 100%!important;
 }
+.m-proud-sl_itm{
+    width: 100%!important;
+} 
+.m-proud-sl_itm{
+    width: 100%!important;
+} 
+
+.m-proud-sl_itm.slick-active{
+    display: flex!important;
+    z-index: 9999!important;
+} */
 /***************************************************
                                     Section Footer 
 ***************************************************/

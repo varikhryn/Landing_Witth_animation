@@ -153,15 +153,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 preloader.style.display = "none";
                 if (document.body.classList.contains("active-preloader") == true) {
                     window.scrollTo(0, 0);
+
+                    headerblck.style.display = "flex";
+                    mainblck.style.display = "flex";
+                    footerblck.style.display = "flex";
+
                     setTimeout(function () {
                         window.scrollTo(0, 0);
                         document.body.classList.remove("active-preloader");
-                    }, 200)
+
+                        $('#m-proud_slider').slick("refresh");
+                    }, 200);
+
                 }
 
-                headerblck.style.display = "flex";
-                mainblck.style.display = "flex";
-                footerblck.style.display = "flex";
             }
         })
     }
