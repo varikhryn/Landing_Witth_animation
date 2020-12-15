@@ -1164,6 +1164,7 @@ body.main-no-scroll{
 .m-abt_r_dscrp{
     width: 48%;
     margin: 0 0 0 auto;
+    padding-top: 50px;
 }
 .m-abt_r_dscrp p{
     margin-bottom: 14px;
@@ -1211,7 +1212,7 @@ body.main-no-scroll{
                                     Section Services 
 ***************************************************/
 .m-services_r{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .m_about-item_main_number{
     width: 62px;
