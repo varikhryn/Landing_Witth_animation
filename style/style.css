@@ -116,7 +116,7 @@ h2{
 h4{
     font-family: "TT Interfaces Regular";
     font-size: 18px;
-    line-height: 140%;
+    line-height: 150%;
     letter-spacing: 0.05em;
 }
 h5{
@@ -971,7 +971,7 @@ body.main-no-scroll{
     transition: all .5s ease-in-out;
 }
 .blc-w-l_100vh-menu > a:hover img{
-    transform: translateX(50px);
+    transform: translateX(25px);
     transition: all .5s ease-in-out;
 }
 .blc-w-l_100vh-menu > a > img{
@@ -1926,9 +1926,9 @@ footer{
     body{
         font-size: 14px;
     }
-    /* h1{
-        font-size: 66px;
-    } */
+    h1{
+        line-height: 140%;
+    }
     h2{
         font-size: 24px;
     }
