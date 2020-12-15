@@ -765,7 +765,7 @@ body.main-no-scroll{
     right: 0;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -1450,7 +1450,7 @@ body.main-no-scroll{
 }
 .m-partners_sld-item:hover .m-partners_sld-item_img img{
     width: 100%;
-    scale: 1.1;
+    transform: scale(1.1);
     transition: all .5s ease-in-out;
 }
 .m-partners_sld-item_top h2{
@@ -1603,7 +1603,7 @@ body.main-no-scroll{
                                     Section Proud 
 ***************************************************/
 .m-proud_top{
-    margin-bottom: 50px;
+    margin-bottom: 22px;
 }
 .m-proud_cnt .btn-arrow .anim-circle._active-scrll-anim svg circle,
 .m-proud_cnt .btn-arrow > svg path{
@@ -1675,24 +1675,6 @@ body.main-no-scroll{
 .m-proud-sl_itm_wr{
     margin-right: 1px;
 }
-/* #m-proud_slider .slick-track{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start; 
-     width: 100%!important;
-}
-.m-proud-sl_itm{
-    width: 100%!important;
-} 
-.m-proud-sl_itm{
-    width: 100%!important;
-} 
-
-.m-proud-sl_itm.slick-active{
-    display: flex!important;
-    z-index: 9999!important;
-} */
 /***************************************************
                                     Section Footer 
 ***************************************************/
@@ -1807,6 +1789,40 @@ footer{
     width: 25px;
     height: auto;
 }
+/* preloader btn */
+.btn-preloader{
+    position: relative;
+    margin-top: -100px;
+}
+.btn-preloader p{
+    color: #FFFFFF;
+}
+.scroll-downs {
+    margin: auto;
+    width :34px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+
 
 /***************************************************
                     Media Screen MAX-Width: 1920px
@@ -2208,3 +2224,11 @@ footer{
 @-o-keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
 @-webkit-keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
 @keyframes offsetBtnHover {from {stroke-dashoffset: 250;}to {stroke-dashoffset: 0;}}
+
+
+/* scroll */
+@-moz-keyframes scroll{0% { opacity: 0; }10% { transform: translateY(0); opacity: 1; }100% { transform: translateY(15px); opacity: 0;}}
+@-ms-keyframes scroll{0% { opacity: 0; }10% { transform: translateY(0); opacity: 1; }100% { transform: translateY(15px); opacity: 0;}}
+@-o-keyframes scroll{0% { opacity: 0; }10% { transform: translateY(0); opacity: 1; }100% { transform: translateY(15px); opacity: 0;}}
+@-webkit-keyframes scroll{0% { opacity: 0; }10% { transform: translateY(0); opacity: 1; }100% { transform: translateY(15px); opacity: 0;}}
+@keyframes scroll {0% { opacity: 0; }10% { transform: translateY(0); opacity: 1; }100% { transform: translateY(15px); opacity: 0;}}
