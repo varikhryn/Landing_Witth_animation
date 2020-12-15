@@ -50,6 +50,16 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector(".main-path-1 path").style.transform = "scale(4)";
         getSvgPosition();
 
+        let btnPr;
+        if (document.getElementById("btn-preloader") != null && document.getElementById("btn-preloader") != undefined) {
+            btnPr = document.getElementById("btn-preloader");
+            let scr = 0;
+            btnPr.onclick = function () {
+                scr += ((((preloader.offsetHeight - window.innerHeight) / 2)) / 6) * 1;
+                window.scrollTo(0, scr);
+            }
+        }
+
         window.addEventListener("scroll", function (e) {
 
 

@@ -771,7 +771,7 @@ body.main-no-scroll{
     width: 100%;
     min-width: 100%;
     max-width: 1920px;
-    z-index: -1;
+    z-index: 9;
 }
 .main-path{
     display: none;
@@ -1790,9 +1790,17 @@ footer{
     height: auto;
 }
 /* preloader btn */
+#this-svg{
+    position: relative;
+    z-index: 9;
+}
 .btn-preloader{
     position: relative;
     margin-top: -100px;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 .btn-preloader p{
     color: #FFFFFF;
